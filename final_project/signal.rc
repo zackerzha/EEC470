@@ -1,0 +1,129 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP2-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 3440 1129 649 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/tmp/xinchaoz470/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 13309.177994 14594.554236
+cursor 13750.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 75
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/tmp/xinchaoz470/inter.fsdb"
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/clock
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/reset
+addSignal -expanded -h 15 /r10k_tb/DUT/EX_STAGE/fu_in
+addSignal -expanded -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3:0]
+addSignal -expanded -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].valid
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_mult_inst
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_store_inst
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_load_inst
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_wb_inst
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_cond_branch_inst
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].is_uncond_branch_inst
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].renamed_preg[5:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].rob_tail[4:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].sq_idx[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].lq_idx[3:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].rs1_idx[5:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].rs2_idx[5:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].rs1_value[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].rs2_value[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].branch_mask[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].branch_stack[3:0]
+addSignal -h 15 -UNSIGNED /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].alu_function[4:0]
+addSignal -h 15 -UNSIGNED /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].opa_select[1:0]
+addSignal -h 15 -UNSIGNED /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].opb_select[3:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].inst
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].NPC[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].PC[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].pred_pc[31:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].halt
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[3].illegal
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[2]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[1]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.fu_in_packet[0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/fu_in.inst_branch_idx[1:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in.branch_valid
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/branch_recovery
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/branch_correct
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/branch_stack[3:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_out_packet
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_in_reg
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/opa_mux_out[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/opb_mux_out[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/alu_result[2:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/cond_branch_result
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/mult_result[31:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/mult_done
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/mult_inst_data_out
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/branch_operand1[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/branch_operand2[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/mult_opa[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/mult_opb[31:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_cdb_packet[3:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_cond_branch_packet
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_uncond_branch_packet[2:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_sq_packet[2:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/fu_lq_packet[2:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/alu_result_packet
+addSignal -expanded -h 15 /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb
+addSignal -expanded -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.preg_to_write[2:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.preg_to_write[2][5:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.preg_to_write[1][5:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.preg_to_write[0][5:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.value[2:0]
+addSignal -h 15 -UNSIGNED -BIN /r10k_tb/DUT/EX_STAGE/alu_result_packet_comb.valid[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/is_opa_forward[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/opa_forward_data[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/is_opb_forward[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/opb_forward_data[2:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/mult_opa_forward_data[31:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/is_mult_opa_forward
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/mult_opb_forward_data[31:0]
+addSignal -h 15 /r10k_tb/DUT/EX_STAGE/is_mult_opb_forward
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/EX_STAGE/squash_after_branch[2:0]
+addSignal -h 15 -UNSIGNED -UDEC /r10k_tb/debug_counter[63:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

@@ -1,0 +1,26 @@
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP2-1_Full64; Runtime version R-2020.12-SP2-1_Full64;  Nov 30 18:21 2022
+VCD+ Writer R-2020.12-SP2-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+@@
+@@
+@@                     0  Asserting System reset......
+@@
+@@                     0 : System STILL at reset, can't show anything
+@@
+@@
+@@                   100 : System STILL at reset, can't show anything
+@@
+
+Warning-[STASKW_CO] Cannot open file
+testbench/r10k_tb.sv, 325
+  The file 'program.mem' could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+ERROR NUM = 2 MSG = No such file or directory
+$finish called from file "testbench/r10k_tb.sv", line 329.
+$finish at simulation time                  150
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 15000 ps
+CPU Time:      0.890 seconds;       Data structure size:   0.8Mb
+Wed Nov 30 18:21:25 2022

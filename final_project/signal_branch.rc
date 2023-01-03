@@ -1,0 +1,108 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP2-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1707 524 317 414
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/tmp/jpshen470/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 30007.000000 31007.000000
+cursor 30700.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 6
+; marker line index
+markerPos 54
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/tmp/jpshen470/inter.fsdb"
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/clock_count[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/bs_valid[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/branch_stack_mask[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/resolved_stack[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/bs_pc_out[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/rob_tail_recovery_stack[3:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/clock
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/reset
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/cond_branch
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/maptable_state_in
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/maptable_in_packet
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/freelist_state_in
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/rob_packet[2:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/rob_tail_packet
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/inst_buf_out
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/inst_taken[1:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/cdb_in[2:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/mispredict
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/correct_predict
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/resolved_branch[3:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/maptable_recovery
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/freelist_recovery
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/rob_tail_recovery[5:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/bs_2_if
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/snapshot[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/BRANCH_STACK/free_stack[3:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/maptable_recovery_stack[3:0]
+addSignal -h 15 /r10k_tb/DUT/BRANCH_STACK/freelist_recovery_stack[3:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/clock
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/reset
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/data_read[1:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/return_valid[1:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/insn_taken[2:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/bs_out
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/insnbuffer_input[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/read_addr[31:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/read_valid
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/npc[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/pc[31:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/valid_out[2:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/detect_branch_full
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/branch_stall
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/predecode[3:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/inst[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/return_valid_ff[1:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/take_branch
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/pc_with_branch[31:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/need_predict
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/detect_jalr
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/branch_stack[3:0]
+addSignal -h 15 -UNSIGNED -HEX /r10k_tb/DUT/INSN_FETCH/current_mask[3:0]
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/branch_stall_full
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/branch_stall_jalr
+addSignal -h 15 /r10k_tb/DUT/INSN_FETCH/stack_full
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
